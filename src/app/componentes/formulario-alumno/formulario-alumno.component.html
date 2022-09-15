@@ -1,0 +1,26 @@
+<section>
+  <fieldset>
+    <label >Ingresar el rut</label>
+    <input type="number"[value]="alumnoNuevo.rutUnico" (input)="cambiodeRut($event)" >
+  </fieldset>
+  <fieldset>
+    <label >Ingresar el nombre </label>
+    <input type="text" [value]="alumnoNuevo.nombre" (input)="cambiodeNombre($event)" >
+  </fieldset>
+  <fieldset>
+    <label >Ingresar el apellido </label>
+    <input type="text"[value]="alumnoNuevo.apellido" (input)="cambiodeApellido($event)">
+  </fieldset>
+  <fieldset>
+    <label >Ingresar el edad </label>
+    <input type="number "[value]="alumnoNuevo.edad" (input)="cambiodeEdad($event)">
+  </fieldset>
+  <fieldset>
+    <label >Ingresar la seccion</label>
+    <input type="text"type="text" [value]="alumnoNuevo.seccion" (input)="cambiodeSeccion($event)">
+  </fieldset>
+  <fieldset>
+
+  <button type="button" (click)="guardarElalumno()"></button>
+  </fieldset>
+</section>
